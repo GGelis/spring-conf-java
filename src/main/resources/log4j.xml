@@ -11,28 +11,6 @@
 		</layout>
 	</appender>
 
-	<appender name="global-log" class="org.apache.log4j.RollingFileAppender">
-		<param name="maxFileSize" value="2000KB" />
-		<param name="MaxBackupIndex" value="10" />
-		<param name="File" value="${catalina.home}/logs/app-msg.log" />
-		<param name="threshold" value="debug" />
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern"
-				value="[%d{dd MMM yyyy HH:mm:ss.SSS}][%5p] %t (%c:%L) - %m%n" />
-		</layout>
-	</appender>
-
-	<appender name="errors-log" class="org.apache.log4j.RollingFileAppender">
-		<param name="maxFileSize" value="2000KB" />
-		<param name="MaxBackupIndex" value="10" />
-		<param name="File" value="${catalina.home}/logs/app-errors.log" />
-		<param name="threshold" value="error" />
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern"
-				value="[%d{dd MMM yyyy HH:mm:ss.SSS}][%5p] %t (%c:%L) - %m%n" />
-		</layout>
-	</appender>
-
 	<!-- Application Loggers -->
 	<logger name="fr.treeptik">
 		<level value="${logger.level}" />
@@ -71,8 +49,6 @@
 
 		<priority value="warn" />
 		<appender-ref ref="console" />
-		<appender-ref ref="global-log" />
-		<appender-ref ref="errors-log" />
 
 	</root>
 

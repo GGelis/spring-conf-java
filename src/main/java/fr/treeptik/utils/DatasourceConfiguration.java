@@ -30,7 +30,7 @@ public class DatasourceConfiguration {
 		Driver driver = new Driver();
 		driver.acceptsURL("com.mysql.jdbc.Driver");
 		config.setDriver(driver);
-		config.setUrl("jdbc:mysql://localhost:3306/jpasample");
+		config.setUrl("jdbc:mysql://localhost:3306/fulljava");
 		config.setUsername("root");
 		config.setPassword("root");
 		return config;
