@@ -21,9 +21,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.mysql.jdbc.Driver;
 
+import fr.treeptik.service.PersonService;
+
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(value = {"fr.treeptik.model"})
+@EnableJpaRepositories(value = {"fr.treeptik.dao"})
 public class DatasourceConfiguration {
 
 	@Bean
@@ -67,5 +69,11 @@ public class DatasourceConfiguration {
 		jpaVendorAdapter.setShowSql(true);
 		jpaVendorAdapter.setGenerateDdl(true);
 		return jpaVendorAdapter;
+	}
+	
+	@Bean
+	public PersonService personService()
+	{
+		return new PersonService();
 	}
 }

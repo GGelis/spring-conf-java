@@ -140,6 +140,6 @@ public class Person implements Serializable
 	public String toString()
 	{
 		return "Person [id=" + id + ", birthDate=" + birthDate + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", animaux=" + animaux + "]";
+				+ ", lastName=" + lastName + "]";
 	}
 }
