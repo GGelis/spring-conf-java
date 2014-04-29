@@ -13,7 +13,7 @@ public class Exemple
 	{
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DatasourceConfiguration.class);
 		
-		logger.info("alo");
+		logger.error("alo");
 		
 		context.close();
 	}

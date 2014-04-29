@@ -13,7 +13,7 @@
 
 	<!-- Application Loggers -->
 	<logger name="fr.treeptik">
-		<level value="${logger.level}" />
+		<level value="debug" />
 	</logger>
 
 	<!-- 3rdparty Loggers -->
@@ -37,7 +37,7 @@
 		<level value="info" />
 	</logger>
 	<logger name="org.hibernate.SQL">
-		<level value="${logger.level}" />
+		<level value="info" />
 	</logger>
 
 	<logger name="org.springframework.security">
